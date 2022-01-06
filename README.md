@@ -4,3 +4,4 @@ A *python* wrapper that runs GCMC simulation using RASPA, and calculates the Gel
 **simulation.input**: RASPA input file<br />
 **wrapper.job**: python wrapper<br />
 **GCMC-GR.py**: main python script<br />
+When running this as a job, submit the **wrapper.job** file.
