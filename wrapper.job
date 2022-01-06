@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH --job-name="GCMCGRpX"
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH -t 168:00:00
+#SBATCH -p buyin
+#SBATCH -A b1013
+#SBATCH --mail-user=zhaoli2023@u.northwestern.edu  # Designate email address for job communications
+#SBATCH --mail-type=END,FAIL     # Events options are job BEGIN, END, NONE, FAIL, REQUEUE
+module purge all
+
+echo START: `date`
+module load anaconda3
+source activate /home/zlc6394/anaconda3/envs/ToBaCCo3
+python GCMC-GR.py
+
+echo FINISH: `date`
+
