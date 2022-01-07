@@ -9,6 +9,10 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 
+# use a non-interactive backend
+import matplotlib
+matplotlib.use('Agg')
+
 file_dir = os.getcwd()
 Sim_dir = file_dir + '/'
 
